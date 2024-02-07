@@ -1,0 +1,516 @@
+/*Estilo Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 50px #00ff0885;
+    transform: scale(1.05);
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00ff08;
+}
+
+/*Estilo do Cabeçalho*/
+header {
+    padding: 40px 4%;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+
+header a:hover{
+    
+}
+
+header nav.menu-desktop:hover {
+    color: #ffff;
+    transform: scale(1.1);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 50px #00ff0885;
+}
+
+/*ESTILO DO MENU MIBILE*/
+.btn-abrir-menu i {
+    color: #00ff08;
+    font-size: 40px;
+}
+
+.menu-mobile {
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar i {
+    color: #00ff08;
+    font-size: 30px;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #00ff08;
+    color: black;
+}
+
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.603);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/*Ajustes no tamanho da imagem*/
+header img {
+    height: 150px;
+}
+
+/*Estilo do Topo do Site*/
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00ff08;
+    font-size: 60px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    height: 450px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+
+/*Meus trabalhos*/
+section.trabalhos {
+    color: white;
+    padding: 40px 4%;
+}
+
+section.trabalhos .flex {
+    gap: 60px;
+}
+
+.trabalhos .trabalhos-box {
+    color: #ffff;
+    padding: 40px;
+    margin-top: 45px;
+    width: 400px;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.trabalhos .trabalhos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff67;
+}
+
+.trabalhos .trabalhos-box i {
+    font-size: 75px;
+    color: #00ff08;
+
+}
+
+.trabalhos .trabalhos-box h3 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+/*Estilo Sobre*/
+section.sobre {
+    padding: 0px 4%;
+    padding-top: 100px;
+}
+
+.sobre img {
+    height: 650px;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #ffff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #00ff08;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre p span {
+    color: grey;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+    background-color: #00ff08;
+    border-radius: 50%;
+    border: none;
+    font-size: 60px;
+    margin: 5px 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/*ESTILO PORTFÓLIO*/
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1e;
+}
+
+section.portfolio .flex {
+    gap: 80px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.img-port {
+    width: 360px;
+    height: 560px;
+    background-color: #00ff08;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0202027a;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #ffff;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.img-port i {
+    font-size: 70px;
+    top: 70%;
+    left: 50%;
+    color: white;
+}
+
+/*ESTILO DO FORMULÁRIO*/
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgba(97, 97, 97, 0.247);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #ffff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit] {
+    width: 120px;
+    background-color: #00ff08;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover[type=submit] {
+    box-shadow: 0px 0px 50px #00ff0885;
+    transform: scale(1.05);
+}
+
+/*ESTILO DO RODAPÉ*/
+footer {
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+footer img {
+    height: 150px;
+}
+
+footer .line-footer p i {
+    color: #00ff08;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+footer .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #00ff08;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: .3s;
+    position: right;
+}
+
+.borda {
+    border-top: 2px solid #00ff08;
+}
+
+footer .line-footer p a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+/*RESPANSÃO*/
+@media screen and (max-width:1020px) {
+
+    /*CLASSE GERAIS*/
+    .flex {
+        flex-direction: column;
+    }
+
+    h2 .titulo {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    /*TOPO DO SITE*/
+    section .topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section .topo-do-site {
+        padding: 20px 10%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    /*CABEÇALHO*/
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /*TRABALHOS*/
+    section .trabalhos {
+        padding: 40px 8%;
+    }
+
+    /*Sobre*/
+    section .sobre {
+        padding: 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /*PORTFÓLIO*/
+    section .portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section .portfolio .flex {
+        gap: 60px
+    }
+
+}
